@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .background-shapes {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Set behind the content */
+    }
+
+    .background-shapes .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(102, 153, 255, 0.3);
+    }
+
+    .circle-1 {
+      width: 200px;
+      height: 200px;
+      top: -50px;
+      left: -50px;
+      z-index: 1;
+    }
+
+    .circle-2 {
+      width: 300px;
+      height: 300px;
+      bottom: -100px;
+      right: -100px;
+      z-index: 1;
+    }
+
+    .invite-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
+      position: relative;
+      z-index: 5; /* Set on top of the background shapes */
+    }
+
+    .header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 1.2em;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .content h2 {
+      margin: 0;
+      font-size: 1.5em;
+      color: #444;
+    }
+
+    .content p {
+      margin: 10px 0;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .details {
+      margin: 20px 0;
+    }
+
+    .details p {
+      margin: 5px 0;
+    }
+
+    .rsvp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 20px;
+      background-color: #2575fc;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1em;
+      z-index: 10;
+      position: relative;
+    }
+
+    .rsvp-button:hover {
+      background-color: #1a5fbf;
+    }
+
+    .footer {
+      background-color: #f4f4f9;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Shapes -->
+  <div class="background-shapes">
+    <div class="circle circle-1"></div>
+    <div class="circle circle-2"></div>
+  </div>
+
+  <!-- Invitation Content -->
+  <div class="invite-container">
+    <div class="header">
+      <h1>You're Invited!</h1>
+      <p>Join us for an unforgettable evening</p>
+    </div>
+    <div class="content">
+      <h2>Annual Gala Night</h2>
+      <p>We are thrilled to invite you to our Annual Gala Night, an evening of celebration, entertainment, and great company!</p>
+      <div class="details">
+        <p><strong>Date:</strong> Saturday, December 9th, 2023</p>
+        <p><strong>Time:</strong> 7:00 PM - 11:00 PM</p>
+        <p><strong>Location:</strong> The Grand Hall, 123 Event Street, Cityville</p>
+      </div>
+      <a href="https://exempler.com/rsvp" class="rsvp-button">RSVP Now</a>
+    </div>
+    <div class="footer">
+      <p>We look forward to seeing you there!</p>
+    </div>
+  </div>
+</body>
+</html>
