@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+        button {
+            background-color: blue;
+            font-size: 25px;
+            border-radius: 10px;
+           
+            padding: 10px;
 
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the button below to change your background color to blue</h1>
+   <button onclick="toggle()">click me</button>
+   <script>
+    function toggle(){
+        document.body.style.backgroundColor = "blue";
+        document.button.style.backgroundColor = "white";
+    }
+   </script>
+</body>
+</html>
