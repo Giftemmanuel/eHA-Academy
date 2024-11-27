@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade calculator</title>
+</head>
+<h1>find your grade below</h1>
+<p class="score"></p>
+<body>
+    <script>
+        const scoreclass = document.querySelector(".score");
+        let mark = prompt("please enter your score:");
+        mark = Number (mark);
+        
 
+        if (mark >= 70 && mark <= 100 ){
+          scoreclass.textContent = `Congratulations! You scored ${mark} and earned an A.`;
+        }else if(mark >= 50 &&  mark <= 60){
+           scoreclass.textContent = `You scored ${mark}. Your grade is a C`;
+        }else if(mark >= 0 && mark <= 40){
+            scoreclass.textContent = `You scored ${mark}. Your grade is an F`;
+        }else{
+            scoreclass.textContent = `Invalid mark: please enter a number between 1 and 100`
+        }
+       
+
+    </script>
+</body>
+</html>
