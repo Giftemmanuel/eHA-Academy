@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Listing</title>
+</head>
+<body>
+    <script>
+        // Define an array named cars and put these items into it: toyota, honda, mazda, mitsubishi, tesla, lexus
+        var cars = ['toyota', 'honda', 'Mazda', 'Mitsubishi', 'Tesla', 'Lexus'];
+
+        // Log first item into console
+      console.log("First item:", cars[0]);
+
+    //   For last item use length property.
+       console.log("Last item:", cars[cars.length - 1]);
+
+    //    Add an item mercedes-benz to the array  and log it to the console.
+       cars.push("mercedes-benz");
+       console.log("Added item:", cars[cars.length - 1]);
+
+    //    Loop through all items of the array and log them to the console
+       for(i=0; i<cars.length; i++){
+        console.log(`car ${i + 1}:`,cars[i]);
+       }
+    </script>
+</body>
+</html>
